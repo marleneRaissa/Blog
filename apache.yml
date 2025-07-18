@@ -3,7 +3,7 @@
   become: True
   tasks:
     - name: Install packages
-      apt:
+      yum:
         name: "nginx"
         state: "present"
     - name: Start nginx server
